@@ -1,4 +1,8 @@
+import SocialNetworks from "./SocialNetworks";
+import InformationContainer from "./InformationContainer";
+
 import Avatar from "../img/eu.png";
+
 import "../styles/components/sidebar.sass";
 
 const Sidebar = () => {
@@ -6,9 +10,9 @@ const Sidebar = () => {
     <aside id="sidebar">
       <img src={Avatar} alt="Charles Silva" />
       <p className="title"> Desenvolvedor </p>
-      <p>Redes sociais</p>
-      <p>Informações de contato</p>
-      <a href="" className="">
+      <SocialNetworks />
+      <InformationContainer />
+      <a href="" className="btn">
         Download Curriculo
       </a>
     </aside>
